@@ -1,0 +1,141 @@
+#home {
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    padding: 10px;
+}
+
+#cta {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+     
+}
+
+#cta .title {
+            position: absolute;
+			font-size: 3.8em;
+            text-align: center;
+			top: 380px;
+			color: #fff;
+			text-shadow: 6px 2px 4px rgba(1, 0, 0, .2);
+            
+}
+
+
+#cta .title1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    position: absolute;
+    font-size: 1.9em;
+    top: 350px;
+    color: #003329;
+    text-shadow: 6px 2px 4px rgba(1, 0, 0, .2);
+    
+}
+
+
+
+
+
+
+
+#cta .title span {
+    color: var(--color-primary-6);
+    display: flex;
+}
+
+
+
+
+
+#banner {
+    display: none;
+    align-items: start;
+    justify-content: end;
+    width: 70%;
+    z-index: 2;
+}
+
+
+.shape {
+    display: none;
+    background-color: var(--color-primary-);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    border-radius: 40% 30% 0% 20%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.parallax {
+    
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .parallax1 img {
+			position: absolute;
+			top: 275px;
+			left: 480px;
+			width: 50%;
+			pointer-events: none;
+		}
+
+     
+       
+
+@media screen and (max-width: 1170px) {
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #banner,
+    #banner img,
+    #home .shape {
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #phone_button button {
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #cta .title1, .title {
+        font-size: 2em;
+    }
+}
+
